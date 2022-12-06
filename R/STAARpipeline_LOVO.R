@@ -25,7 +25,7 @@ STAARpipeline_LOVO<-function(genofile,genes,category,Geno,obj_nullmodel,Anno.Int
 		results_temp <- as.vector(genes[1,])
 		results_temp[3] <- category
 		results_temp[2] <- chr
-		results_temp[1] <- as.character(genes[kk,1])
+		results_temp[1] <- as.character(genes[1,1])
     results_temp[4] <- rmvar
     results_temp[5] <- pvalues$num_variant
 
