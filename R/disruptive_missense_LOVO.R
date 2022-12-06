@@ -5,6 +5,7 @@ disruptive_missense_LOVO <- function(chr,gene_name,genofile,category,obj_nullmod
                                 Use_annotation_weights=c(TRUE,FALSE),Annotation_name=NULL,silent=FALSE){
 
 	## evaluate choices
+  ##
 	variant_type <- match.arg(variant_type)
 	geno_missing_imputation <- match.arg(geno_missing_imputation)
 
