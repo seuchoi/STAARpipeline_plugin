@@ -1,4 +1,4 @@
-disruptive_missense_LOVO <- function(chr,gene_name,genofile,obj_nullmodel,genes,
+disruptive_missense_LOVO <- function(chr,gene_name,genofile,category,obj_nullmodel,genes,
                                 rare_maf_cutoff=0.01,rv_num_cutoff=2,
                                 QC_label="annotation/filter",variant_type=c("SNV","Indel","variant"),geno_missing_imputation=c("mean","minor"),
                                 Annotation_dir="annotation/info/FunctionalAnnotation",Annotation_name_catalog,
