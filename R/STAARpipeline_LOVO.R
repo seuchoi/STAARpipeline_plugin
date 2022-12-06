@@ -44,5 +44,5 @@ STAARpipeline_LOVO<-function(genofile,genes,category,Geno,obj_nullmodel,Anno.Int
 		colnames(results)[1:5] <- c("Gene name","Chr","Category","rm_variant","#SNV")
 		colnames(results)[(dim(results)[2]-1):dim(results)[2]] <- c("ACAT-O","STAAR-O")
 	}
-
+  return(results)
 }
