@@ -136,7 +136,7 @@ promoter_DHS_LOVO <- function(chr,gene_name,genofile,category,obj_nullmodel,gene
 
 ## leave one variant out analysis start
   genes2<-dfPromrOCRsVarGene.SNV[1,1:4]
-  results<-STAARpipeline_LOVO(genofile,genes=genes2,category,Geno,obj_nullmodel,Anno.Int.PHRED.sub,rare_maf_cutoff,rv_num_cutoff)
+  results<-STAARpipeline_LOVO(genofile,genes=genes2,category,Geno,obj_nullmodel,Anno.Int.PHRED.sub,rare_maf_cutoff,rv_num_cutoff,silent=silent)
 
 
 	seqResetFilter(genofile)

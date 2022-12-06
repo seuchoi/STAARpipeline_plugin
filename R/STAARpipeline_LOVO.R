@@ -1,4 +1,4 @@
-STAARpipeline_LOVO<-function(genofile,genes,category,Geno,obj_nullmodel,Anno.Int.PHRED.sub,rare_maf_cutoff,rv_num_cutoff){
+STAARpipeline_LOVO<-function(genofile,genes,category,Geno,obj_nullmodel,Anno.Int.PHRED.sub,rare_maf_cutoff,rv_num_cutoff,silent=TRUE){
 
   ## leave one variant out analysis start
   results <- c()
