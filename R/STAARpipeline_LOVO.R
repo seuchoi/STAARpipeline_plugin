@@ -13,7 +13,7 @@ STAARpipeline_LOVO<-function(genofile,genes,category,Geno,obj_nullmodel,Anno.Int
   try(pvalues <- STAAR(Geno,obj_nullmodel,Anno.Int.PHRED.sub,rare_maf_cutoff=rare_maf_cutoff,rv_num_cutoff=rv_num_cutoff),silent=silent)
   rmvar<-"None"
   }else{
-  cat("  remove number",lvar,"variant out of \n")
+  cat("  remove number",lvar,"variant out of",length(varids),"\n")
   Geno2<-Geno[,-c(lvar)]
   Anno.Int.PHRED.sub2<-Anno.Int.PHRED.sub[-c(lvar),]
   rmvar<-varids[lvar]
