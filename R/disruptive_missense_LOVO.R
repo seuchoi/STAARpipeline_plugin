@@ -122,7 +122,7 @@ disruptive_missense_LOVO <- function(chr,gene_name,genofile,category,obj_nullmod
 
 
   ## leave one variant out analysis start
-  result2<-STAARpipeline_LOVO(genofile,genes,category,Geno,obj_nullmodel,Anno.Int.PHRED.sub,rare_maf_cutoff,rv_num_cutoff,silent)
+  result2<-STAARpipeline_LOVO(genofile,genes,category,Geno,obj_nullmodel,Anno.Int.PHRED.sub,rare_maf_cutoff,rv_num_cutoff)
 
 	seqResetFilter(genofile)
 
