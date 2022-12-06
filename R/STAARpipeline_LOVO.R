@@ -22,7 +22,7 @@ STAARpipeline_LOVO<-function(genofile,genes,category,Geno,obj_nullmodel,Anno.Int
   }
 	if(class(pvalues)=="list")
 	{
-		results_temp <- as.vector(genes[kk,])
+		results_temp <- as.vector(genes[1,])
 		results_temp[3] <- category
 		results_temp[2] <- chr
 		results_temp[1] <- as.character(genes[kk,1])
