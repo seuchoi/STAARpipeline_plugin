@@ -59,3 +59,7 @@ par(mar = c(20, 5, 2, 2))
 
 STAARpipeline_pvalue_fig(result=yyy_ori,cond_result=yyy_cond)
 dev.off()
+
+
+## leave one variant out analysis
+res_LOVO<-promoter_DHS_LOVO(chr=chr,gene_name=gene_name,category=category,genofile=genofile,obj_nullmodel=obj_nullmodel,genes=genes,rare_maf_cutoff=0.01,rv_num_cutoff=2,QC_label="annotation/filter",variant_type="SNV",geno_missing_imputation=c("minor"),Annotation_dir="annotation/info/FunctionalAnnotation",Annotation_name_catalog=Annotation_name_catalog,Use_annotation_weights=TRUE,Annotation_name=Annotation_name)
