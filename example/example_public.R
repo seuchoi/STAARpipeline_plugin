@@ -10,8 +10,9 @@ library(SeqVarTools)
 library(STAAR)
 library(STAARpipeline)
 library(R.utils)
+library(Rcpp)
 sourceDirectory("/your/github/directory/STAARpipeline_plugin/","*.R")
-
+sourceCpp("/your/github/directory/STAARpipeline_plugin/src/","*.cpp")
 ### load your files
 genofile=seqOpen("your gdsfile")
 obj_nullmodel=get(load("your null model file.RData"))
